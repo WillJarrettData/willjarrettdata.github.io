@@ -1,42 +1,54 @@
 const articles = [
     {
-        id: -1,
-        title: "Ukraine war timeline",
-        description: "An interactive map of the day-by-day territorial changes in the Russia-Ukraine war, with major events highlighted.",
-        link: "https://apnews.com/article/russia-ukraine-war-ukraine-vladimir-putin-0000019c8ad8dd59afffcadd1e100000",
-        tags: ["ArcGIS", "React", "Python"],
+        id: -2,
+        title: "Israel expansion maps",
+        description: "A graphics-led explainer showing the land Israel has occupied since 2023 in Lebanon, Gaza, Syria, and the West Bank.",
+        link: "https://apnews.com/projects/israel-expansion-maps/",
+        tags: ["React", "Scrollama", "Illustrator"],
         media: {
             type: "image",
-            src: "ukraineTimeline_thumb.webp",
-            alt: "Article showing how the Venezuelan oil industry has changed over time"
+            src: "israelExpansion_thumb.webp",
+            alt: "React app showing maps of land occupied by Israel"
+        },
+    },
+    {
+        id: -1,
+        title: "CEO pay explorer",
+        description: "Readers can see how their salaries compare to the US' top paid CEOs – and how long it would take to earn the same amount.",
+        link: "https://apnews.com/article/see-how-your-pay-compares-to-the-ceos-of-the-top-us-companies-0000019e3fbada77a59e7fbffcd20000",
+        tags: ["React", "Python"],
+        media: {
+            type: "image",
+            src: "ceoPayInteractive_thumb.webp",
+            alt: "React app showing how your pay compares to the top paid CEOs in the U.S."
         }
     },
     {
         id: 0,
-        title: "Climate misinfo database",
-        description: "Svelte apps showing thousands of examples of AI-categorised climate change misinformation from social media.",
-        link: "https://www.tortoisemedia.com/data/hot-air",
-        tags: ["JavaScript", "Svelte", "Python"],
+        title: "World Cup schedule",
+        description: "A suite of World Cup 2026 interactives, including a live-updating schedule with stats and the knockouts bracket.",
+        link: "https://apnews.com/hub/2026-world-cup-schedule",
+        tags: ["React", "AWS Lambda", "Python"],
         media: {
             type: "image",
-            src: "hotAir_thumb.webp",
-            alt: "Svelte app showing climate change misinformation on the internet"
+            src: "worldCupSchedulev2_thumb.webp",
+            alt: "React app showing the 2026 World Cup schedule and knockouts bracket"
         }
     },
+    // {
+    //     id: 0.5,
+    //     title: "Ukraine war timeline",
+    //     description: "An interactive map of the day-by-day territorial changes in the Russia-Ukraine war, with major events highlighted.",
+    //     link: "https://apnews.com/article/russia-ukraine-war-ukraine-vladimir-putin-0000019c8ad8dd59afffcadd1e100000",
+    //     tags: ["React", "Python", "ArcGIS"],
+    //     media: {
+    //         type: "image",
+    //         src: "ukraineTimeline_thumb.webp",
+    //         alt: "Article showing how the Venezuelan oil industry has changed over time"
+    //     }
+    // },
     {
         id: 1,
-        title: "Hill bomb arrests",
-        description: "Interactive timeline of the Dolores Park Hill Bomb, where 117 people were arrested during a purported riot.",
-        link: "https://missionlocal.org/2023/07/hill-bomb-timeline-police-skaters-map-juvenile-policies/",
-        tags: ["JavaScript", "Mapbox", "Scrollama"],
-        media: {
-            type: "video",
-            src: "hillBomb_thumb.mp4",
-            alt: "Scrolling map timeline of the Dolores Park Hill Bomb arrests"
-        }
-    },
-    {
-        id: 2,
         title: "Big money in SF politics",
         description: "Months-long investigation with Guardian US into 'grey money' political spending by tech billionaires in San Francisco.",
         link: "https://www.theguardian.com/us-news/2024/feb/12/san-francisco-tech-billionaires-political-influence",
@@ -45,6 +57,18 @@ const articles = [
             type: "image",
             src: "bigMoney_thumb.webp",
             alt: "Network graph showing connections between ultra-rich and SF political causes"
+        }
+    },
+    {
+        id: 2,
+        title: "Hill bomb arrests",
+        description: "Interactive timeline of the Dolores Park Hill Bomb, where 117 people were arrested during a purported riot.",
+        link: "https://missionlocal.org/2023/07/hill-bomb-timeline-police-skaters-map-juvenile-policies/",
+        tags: ["JavaScript", "Mapbox", "Scrollama"],
+        media: {
+            type: "video",
+            src: "hillBomb_thumb.mp4",
+            alt: "Scrolling map timeline of the Dolores Park Hill Bomb arrests"
         }
     },
     {
@@ -203,18 +227,18 @@ const articles = [
             alt: "Map app showing votes in San Francisco neighborhoods"
         }
     },
-    {
-        id: 16,
-        title: "Rise in scooter collisions",
-        description: "Interactive mapping and graphics to show the 31% increase in scooter collisions in the past year.",
-        link: "https://missionlocal.org/2023/05/scooter-injuries-rise-31-percent-2022-infrastructure-lime-spin/",
-        tags: ["JavaScript", "Mapbox", "Python", "Illustrator"],
-        media: {
-            type: "image",
-            src: "scooterCollisions_thumb.webp",
-            alt: "Bar chart showing scooter injuries across a six-year period"
-        }
-    },
+    // {
+    //     id: 16,
+    //     title: "Rise in scooter collisions",
+    //     description: "Interactive mapping and graphics to show the 31% increase in scooter collisions in the past year.",
+    //     link: "https://missionlocal.org/2023/05/scooter-injuries-rise-31-percent-2022-infrastructure-lime-spin/",
+    //     tags: ["JavaScript", "Mapbox", "Python", "Illustrator"],
+    //     media: {
+    //         type: "image",
+    //         src: "scooterCollisions_thumb.webp",
+    //         alt: "Bar chart showing scooter injuries across a six-year period"
+    //     }
+    // },
     {
         id: 17,
         title: "Mission Local crossword",
